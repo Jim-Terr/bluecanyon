@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body>
+
+July 16, 2002  Inside:  Jump Forms | Mini Tips | Random Images/Links  
+ 
+Form Based Jump Navigation  
+
+To save space and to provide a nifty way of giving your visitors access to your pages, you could consider using a form-based, drop-down jump navigation system. This is practical especially if you have many sections to your site, with multiple pages in each section.
+
+Normally, you would have a series of links for each page, and more links underneath for all of the subpages. Using this Jump script, you could simply name the various sections, and place a form selector below each to show all the sub-pages, without taking all that space to show them.
+
+<Script Language="JavaScript">
+<!-- Hide from old browsers
+function NavJump(list){location.href = 
+list.options[list.selectedIndex].value } 
+// end hiding --->
+</script> 
+<form>
+  <INPUT TYPE="button" VALUE="Jump"
+onClick="NavJump(this.form.elements[0])">
+</FORM>  
+ 
+ 
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Hide 
+var imagenumber = 2 ; 
+var randomnumber = Math.random() ; 
+var rand1 = Math.round( (imagenumber-1) * randomnumber) + 1 ; 
+images = new Array 
+images[1] = "Directory/First_Image_Name.jpg" 
+images[2] = "Directory/Second_Image_Name.jpg" 
+var myimage = images[rand1] 
+links = new Array 
+links[1] = "Directory/Your_Page.html" 
+links[2] = "Directory/Your_Page.html" 
+var mylink = links[rand1] 
+document.write('<A HREF="' + mylink + '"><IMG src="' + myimage + '"></A>')
+// -- End Hiding -->
+</SCRIPT>
+<select name="select">
+  <option value="index.html">Home Page </option>
+  <option value="photos.html">Photos </option>
+  <option value="links.html">Links </option>
+  <option>A Test to see if this works</option>
+</select>
+</body>
+</html>
