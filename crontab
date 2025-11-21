@@ -1,0 +1,11 @@
+45 2 * * * /www/b/bluecanyon/cgi-bin/awstats.pl -config=bluecanyonproductions.com -update
+>>/www/b/bluecanyon/logs/cronaw.log 2>>/www/b/bluecanyon/logs/cronaw.err
+
+00 1 * * * /www/b/bluecanyon/htdocs/crontab_saveLogs.php
+>>/www/u/user/logs/script.log 2>>/www/u/user/logs/script.err
+
+
+
+
+
+
